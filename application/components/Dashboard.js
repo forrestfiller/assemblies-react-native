@@ -1,4 +1,3 @@
-/* application/components/Dashboard.js */
 import React, { Component } from 'react';
 import { TabBarIOS } from 'react-native';
 import { TabBarItemIOS } from 'react-native-vector-icons/Ionicons';
@@ -12,7 +11,7 @@ class Dashboard extends Component{
     super();
     this.state = {
       selectedTab: 'Activity'
-    }
+    };
   }
   render(){
     return (

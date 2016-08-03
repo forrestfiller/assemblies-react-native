@@ -1,29 +1,21 @@
-/* application/components/messages/MessagesView.js */
-
 import React, { Component } from 'react';
-import {
-  View,
-  Text
-} from 'react-native';
-
-import Icon from 'react-native-vector-icons/Iconicons';
+import { View, Text } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 import NavigationBar from 'react-native-navbar';
+
 import Colors from '../../styles/colors';
-import { globals } from '../../styles/';
+import { globals } from '../../styles';
 
 class MessagesView extends Component{
   render(){
-    let titleConfig = { title: 'Messages', tintColor: 'white' };
     return (
       <View style={globals.flexContainer}>
         <NavigationBar
-          title={titleConfig}
+          title={{ title: 'Activity', tintColor: 'white' }}
           tintColor={Colors.brandPrimary}
         />
         <View style={globals.flexCenter}>
-          <Text style={globals.h2}>
-            This is the MessagesView
-          </Text>
+          <Text style={globals.h2}>This is the MessagesView</Text>
         </View>
       </View>
     )
@@ -31,4 +23,3 @@ class MessagesView extends Component{
 }
 
 export default MessagesView;
-

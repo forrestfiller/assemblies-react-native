@@ -1,29 +1,21 @@
-/* application/components/profile/ProfileView.js */
-
 import React, { Component } from 'react';
-import {
-  View,
-  Text
-} from 'react-native';
-
-import Icon from 'react-native-vector-icons/Iconicons';
+import { View, Text } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 import NavigationBar from 'react-native-navbar';
+
 import Colors from '../../styles/colors';
-import { globals } from '../../styles/';
+import { globals } from '../../styles';
 
 class ProfileView extends Component{
   render(){
-    let titleConfig = { title: 'Profile', tintColor: 'white' };
     return (
       <View style={globals.flexContainer}>
         <NavigationBar
-          title={titleConfig}
+          title={{ title: 'Activity', tintColor: 'white' }}
           tintColor={Colors.brandPrimary}
         />
         <View style={globals.flexCenter}>
-          <Text style={globals.h2}>
-            This is the ProfileView
-          </Text>
+          <Text style={globals.h2}>This is the ProfileView</Text>
         </View>
       </View>
     )
@@ -31,5 +23,3 @@ class ProfileView extends Component{
 }
 
 export default ProfileView;
-
-
